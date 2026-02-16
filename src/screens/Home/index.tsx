@@ -9,7 +9,7 @@ function Home() {
       <HeroSection />
       <WriterSection />
       <ProverbSection />
-      <ProverbExplain />
+      {/* <ProverbExplain /> */}
     </div>
   );
 }

@@ -1,5 +1,5 @@
-import ProverbCard from "./components/ProverbCard";
-import { PROVERB } from "./constants";
+// import ProverbCard from "./components/ProverbCard";
+// import { PROVERB } from "./constants";
 
 const styles = {
   root: `
@@ -18,11 +18,14 @@ export default function ProverbSection() {
     <div className="wrapper-pad">
       <div className={styles.root + " wrapper"}>
         <h2 className="font-iranYekan-500 text-3xl leading-12">
-          چند نمونه از
-          <strong className="text-green-600"> پیر بته مثال </strong> های تپوری
-          (مازندرانی)
+          لیست کامل{" "}
+          <strong className="text-green-600">
+            {" "}
+            اشعار تبری (اشعار مازندرانی)
+          </strong>{" "}
+          :
         </h2>
-        <div className={styles.cardWrapper}>
+        {/* <div className={styles.cardWrapper}>
           {PROVERB.map(({ irony, mean, proverb, to }) => (
             <ProverbCard
               key={proverb}
@@ -32,7 +35,7 @@ export default function ProverbSection() {
               to={to}
             />
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -52,39 +52,34 @@ export default function HeroSection() {
               lg:leading-24
           `}
           >
-            کتاب آنلاین
+            کتابهای آنلاین
             <br className="lg:hidden" />
-            <strong className="text-green-600 text-[46px] lg:text-6xl">
+            <strong className="text-green-600 text-[46px] lg:text-6xl ">
               {" "}
-              پیر بته مثال{" "}
+              اشعار تبری یا مازندرانی{" "}
             </strong>
-            <br className="lg:hidden" />
-            به زبان تپوری
+            {/* <br className="lg:hidden" />
+            به زبان تپوری */}
           </h1>
           <div className="lg:w-11/12 ">
             <p className="mt-16  lg:mt-12 font-iranYekan-400 text-[18px]">
-              زبانزد به گفتاری کوتاه، رسا و خوش‌آهنگ گفته می‌شود که در
-              بردارنده‌ی حکمتی عام، نکتۀ اخلاقی یا نتیجه‌ای تجربی است.
+              <strong>شعر چيست؟</strong>
+              <br />
+              شعر، در لغت بمعني دانش و فهم و ادراك است كه چامه، سرود، سخن و
+              چكامه نيز خوانده شده است و در تعريف شعر گفته اند كه:
             </p>
             <p className="font-iranYekan-400 text-[18px] mt-6 lg:mt-0">
-              ضرب‌المثل‌های تپوری در واقع خلاصۀ فرهنگ، تجربیات و جهان‌بینی یک
-              ملت هستند که در قالب جملاتی قصار و به یاد ماندنی از نسلی به نسل
-              دیگر منتقل شده‌اند.
+              كلامي است موزون و مقفي كه داراي معني باشد، و اين تعريف شعر است. از
+              روزي كه انسان شعر را شناخته است، آن را ملازم وزن يافته و آهنگ و
+              وزن شعر، او را مسحور و مفتون خويش ساخته است.
             </p>
             <div>
-              <p className="mt-12 lg:mt-9 font-iranYekan-300 text-[17px]">
-                این مجموعه زبانزدهای مازندرانی توسط جناب{" "}
-                <strong className="text-[16px]"> غلامحسین باقری آلاشتی</strong>{" "}
-                گردآوری شده و حاصل یک دهه زحمت ایشان میباشد.
-              </p>
-              <Link
-                href="/writer"
+              <span
+                // href="/writer"
                 className="block font-iranYekan-500 mt-5 w-fit text-[16px]"
               >
-                <ColorfulButton>
-                  بیوگرافی نویسنده و کتاب پیر بته مثال
-                </ColorfulButton>
-              </Link>
+                <ColorfulButton>تَوِری سوتون به چم اشعار تبری </ColorfulButton>
+              </span>
             </div>
           </div>
         </section>
