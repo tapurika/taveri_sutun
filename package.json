@@ -5,8 +5,8 @@
   "author": "mohammad barzegar",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "node copy-worker.js && next dev",
+    "build": "node copy-worker.js && next build",
     "start": "next start",
     "lint": "eslint",
     "predeploy": "npm run build",
@@ -28,8 +28,10 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "babel-plugin-react-compiler": "1.0.0",
+    "copy-webpack-plugin": "^13.0.1",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
+    "fs-extra": "^11.3.3",
     "gh-pages": "^6.3.0",
     "tailwindcss": "^4",
     "typescript": "^5"

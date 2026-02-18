@@ -2,20 +2,32 @@ import Link from "next/link";
 import { CiLink } from "react-icons/ci";
 
 import { LINKS_1_500 } from "../../Layout/constant";
-import LazyAppPdfViewer from "@/src/components/PDFViewer/LazyAppPdfViewer";
 // pages/index.tsx
 import React from "react";
-import PdfViewer from "@/src/components/PDFViewer/NN";
 // import pdfFile from "../../sources/taranehaye_mahali_tonekabon_va_ramsar.pdf";
 
-const pdfSrc =
-  "https://cdn.codewithmosh.com/image/upload/v1721763853/guides/web-roadmap.pdf";
+import dynamic from "next/dynamic";
+
+// Dynamically import PDFViewer with SSR disabled
+const PDFViewer = dynamic(() => import("@/src/components/PDFViewer/NN"), {
+  ssr: false,
+});
+
+function Home() {
+  return (
+    <main className="min-h-screen bg-gray-50 py-10">
+      <h1 className="text-3xl font-bold text-center mb-6 text-gray-800">
+        Next.js Book Reader
+      </h1>
+      <PDFViewer />
+    </main>
+  );
+}
 
 const HomePage: React.FC = () => {
   return (
     <div>
       <h1>PDF Viewer</h1>
-      <PdfViewer file={pdfSrc} />
     </div>
   );
 };
@@ -47,6 +59,7 @@ export default function ProverbPage_1() {
         </strong>
         از 1 تا 500{" "}
       </h3>
+      <Home />
       {/* <div className={styles.textBox}>
         {LINKS_1_500.toList.map((to) => {
           return (

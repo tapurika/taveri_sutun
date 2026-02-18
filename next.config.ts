@@ -9,6 +9,8 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   // swcMinify: false,
   output: "export",
+  swcMinify: false,
+
   // distDir: 'dist',
   // distDir: 'dist',
   images: {
