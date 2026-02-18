@@ -7,6 +7,7 @@ const nextConfig: NextConfig = {
   /* config options here */
   reactCompiler: true,
   reactStrictMode: true,
+  // swcMinify: false,
   output: "export",
   // distDir: 'dist',
   // distDir: 'dist',

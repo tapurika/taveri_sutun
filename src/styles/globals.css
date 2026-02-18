@@ -3,6 +3,21 @@
 @source "../../.flowbite-react/class-list.json";
 @import "./fonts.css";
 
+/* In your global.css or a specific css module */
+@import "react-pdf/dist/Page/AnnotationLayer.css";
+@import "react-pdf/dist/Page/TextLayer.css";
+
+/* Optional: Styling for the PDF container */
+.pdf-container {
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  border: 1px solid #ddd;
+  background-color: #f1f1f1;
+  height: 80vh; /* Fixed height for scrolling */
+  width: 100%;
+}
+
 :root {
   /* --background: #ffffff;
   --foreground: #171717; */

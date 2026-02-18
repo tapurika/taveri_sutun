@@ -1,3 +1,5 @@
+import LazyAppProviders from "../components/PDFViewer/LazyAppProviders";
+
 import Header from "./Header";
 import Footer from "./Footer";
 
@@ -9,11 +11,13 @@ const styles = {
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
-    <div className={styles.root}>
-      <Header />
-      <main>{children}</main>
-      <Footer />
-    </div>
+    <LazyAppProviders licenseKey="your-license-key">
+      <div className={styles.root}>
+        <Header />
+        <main>{children}</main>
+        <Footer />
+      </div>
+    </LazyAppProviders>
   );
 };
 

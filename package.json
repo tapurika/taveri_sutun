@@ -13,11 +13,14 @@
     "deploy": "gh-pages -d out"
   },
   "dependencies": {
+    "@pdf-viewer/react": "^1.19.0",
     "flowbite-react": "^0.12.17",
     "next": "16.1.6",
+    "pdfjs-dist": "^5.4.624",
     "react": "19.2.3",
     "react-dom": "19.2.3",
-    "react-icons": "^5.5.0"
+    "react-icons": "^5.5.0",
+    "react-pdf": "^10.3.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
